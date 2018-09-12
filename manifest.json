@@ -1,0 +1,52 @@
+{
+    "manifest_version": "2",
+    "api_version": "1",
+    "name": "hash2",
+    "description": "Hash strings using common algorithms like md5, sha1 and sha256",
+    "developer_name": "Albin Larsson",
+    "icon": "icon.svg",
+    "preferences": [
+        {
+            "id": "hash",
+            "type": "keyword",
+            "name": "Hash",
+            "default_value": "hash"
+        },
+        {
+            "id": "md5",
+            "type": "keyword",
+            "name": "md5",
+            "default_value": "md5"
+        },
+        {
+            "id": "sha1",
+            "type": "keyword",
+            "name": "sha1",
+            "default_value": "sha1"
+        },
+        {
+            "id": "sha224",
+            "type": "keyword",
+            "name": "sha224",
+            "default_value": "sha224"
+        },
+        {
+            "id": "sha256",
+            "type": "keyword",
+            "name": "sha256",
+            "default_value": "sha256"
+        },
+        {
+            "id": "sha384",
+            "type": "keyword",
+            "name": "sha384",
+            "default_value": "sha384"
+        },
+        {
+            "id": "sha512",
+            "type": "keyword",
+            "name": "sha512",
+            "default_value": "sha512"
+        }
+    ]
+}
