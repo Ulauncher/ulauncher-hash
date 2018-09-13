@@ -27,7 +27,7 @@ class KeywordQueryEventListener(EventListener):
 
         for algo in algos:
             hash = getattr(hashlib, algo)(argument).hexdigest()
-            items.append(ExtensionResultItem(icon='icon.svg', name=hash, description=algo, on_enter=CopyToClipboardAction(hash)))
+            items.append(ExtensionResultItem(icon='icon.svg', name=hash, description=algo, on_enter=CopyToClipboardAction(hash), highlightable=False))
 
         return RenderResultListAction(items)
 
