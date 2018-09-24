@@ -9,3 +9,6 @@ Install in Ulauncher using this url (https://github.com/friday/ulauncher-hash2),
 ## Credits
 * The [icon](https://www.flaticon.com/free-icon/encryption_418404) was created by [freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/).
 * [Bruno Paz](https://github.com/brpaz) for the original [ulauncher-hash](https://github.com/brpaz/ulauncher-hash).
+
+## Alternatives
+* [ulauncher-hash-lambda](https://github.com/xtrcode/ulauncher-hash-lambda) - Fork which supports more algorithms (may not be optimal for everyone - see [#1](https://github.com/friday/ulauncher-hash2/issues/1))
