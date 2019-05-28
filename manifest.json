@@ -1,5 +1,6 @@
 {
     "manifest_version": "2",
+    "required_api_version": "1",
     "api_version": "1",
     "name": "hash2",
     "description": "Hash strings using common algorithms like md5, sha1 and sha256",
