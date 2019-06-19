@@ -18,16 +18,21 @@ class KeywordQueryEventListener(EventListener):
         keyword = event.get_keyword()
 
         # Find the keyword id using the keyword (since the keyword can be changed by users)
-        for kwId, kw in extension.preferences.iteritems():
+        for kwId, kw in extension.preferences.items():
             if kw == keyword:
                 keywordId = kwId
 
         # Show the algorithm specified as keyword, or all if the keyword was "hash"
-        algos = hashlib.algorithms if keywordId == 'hash' else [keywordId]
+        algos = hashlib.algorithms_guaranteed if keywordId == 'hash' else [keywordId]
 
         for algo in algos:
-            hash = getattr(hashlib, algo)(argument).hexdigest()
-            items.append(ExtensionResultItem(icon='icon.svg', name=hash, description=algo, on_enter=CopyToClipboardAction(hash), highlightable=False))
+            try:
+                seed = hashlib.new(algo)
+                seed.update(argument)
+                hash = seed.hexdigest()
+                items.append(ExtensionResultItem(icon='icon.svg', name=hash, description=algo, on_enter=CopyToClipboardAction(hash), highlightable=False))
+            except:
+                pass
 
         return RenderResultListAction(items)
 
