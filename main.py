@@ -8,9 +8,9 @@ from ulauncher.api.shared.item.ExtensionResultItem import ExtensionResultItem
 from ulauncher.api.shared.action.RenderResultListAction import RenderResultListAction
 from ulauncher.api.shared.action.CopyToClipboardAction import CopyToClipboardAction
 
-class Hash2Extension(Extension):
+class Hash(Extension):
     def __init__(self):
-        super(Hash2Extension, self).__init__()
+        super(Hash, self).__init__()
         self.subscribe(KeywordQueryEvent, KeywordQueryEventListener())
 
 class KeywordQueryEventListener(EventListener):
@@ -39,4 +39,4 @@ class KeywordQueryEventListener(EventListener):
         return RenderResultListAction(items)
 
 if __name__ == '__main__':
-    Hash2Extension().run()
+    Hash().run()

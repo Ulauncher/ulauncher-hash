@@ -2,7 +2,7 @@
     "manifest_version": "2",
     "required_api_version": "2",
     "api_version": "1",
-    "name": "hash2",
+    "name": "Hash",
     "description": "Hash strings using common algorithms like md5, sha1 and sha256",
     "developer_name": "Albin Larsson",
     "icon": "icon.svg",
