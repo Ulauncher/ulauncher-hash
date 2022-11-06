@@ -1,53 +1,43 @@
 {
-    "manifest_version": "2",
-    "required_api_version": "2",
-    "api_version": "1",
-    "name": "Hash",
-    "description": "Hash strings using common algorithms like md5, sha1 and sha256",
-    "developer_name": "Albin Larsson",
-    "icon": "icon.svg",
-    "preferences": [
-        {
-            "id": "hash",
-            "type": "keyword",
-            "name": "Hash",
-            "default_value": "hash"
-        },
-        {
-            "id": "md5",
-            "type": "keyword",
-            "name": "md5",
-            "default_value": "md5"
-        },
-        {
-            "id": "sha1",
-            "type": "keyword",
-            "name": "sha1",
-            "default_value": "sha1"
-        },
-        {
-            "id": "sha224",
-            "type": "keyword",
-            "name": "sha224",
-            "default_value": "sha224"
-        },
-        {
-            "id": "sha256",
-            "type": "keyword",
-            "name": "sha256",
-            "default_value": "sha256"
-        },
-        {
-            "id": "sha384",
-            "type": "keyword",
-            "name": "sha384",
-            "default_value": "sha384"
-        },
-        {
-            "id": "sha512",
-            "type": "keyword",
-            "name": "sha512",
-            "default_value": "sha512"
-        }
-    ]
+  "api_version": "3",
+  "authors": "Albin Larsson",
+  "name": "Hash",
+  "icon": "icon.svg",
+  "triggers": {
+    "hash": {
+      "name": "Hash",
+      "keyword": "hash",
+      "description": "Show a list of supported hash algoritm checksums for an input"
+    },
+    "md5": {
+      "name": "md5",
+      "keyword": "md5",
+      "description": "Show md5 checksum for an input"
+    },
+    "sha1": {
+      "name": "sha1",
+      "keyword": "sha1",
+      "description": "Show sha1 checksum for an input"
+    },
+    "sha224": {
+      "name": "sha224",
+      "keyword": "sha224",
+      "description": "Show sha224 checksum for an input"
+    },
+    "sha256": {
+      "name": "sha256",
+      "keyword": "sha256",
+      "description": "Show sha256 checksum for an input"
+    },
+    "sha384": {
+      "name": "sha384",
+      "keyword": "sha384",
+      "description": "Show sha384 checksum for an input"
+    },
+    "sha512": {
+      "name": "sha512",
+      "keyword": "sha512",
+      "description": "Show sha512 checksum for an input"
+    }
+  }
 }
