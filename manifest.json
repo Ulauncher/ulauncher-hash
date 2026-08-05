@@ -3,6 +3,11 @@
   "authors": "Albin Larsson",
   "name": "Hash",
   "icon": "icon.svg",
+  "urls": {
+    "remote": "https://github.com/Ulauncher/ulauncher-hash.git",
+    "website": "https://github.com/Ulauncher/ulauncher-hash",
+    "issues": "https://github.com/Ulauncher/ulauncher-hash/issues"
+  },
   "triggers": {
     "hash": {
       "name": "Hash",
